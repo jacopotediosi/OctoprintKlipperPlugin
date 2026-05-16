@@ -386,6 +386,9 @@ class KlipperPlugin(
             log_info(self, self._message)
             self._message = ""
 
+    def is_api_protected(self):
+        return True
+
     def get_api_commands(self):
         return dict(
             listLogFiles=[],
